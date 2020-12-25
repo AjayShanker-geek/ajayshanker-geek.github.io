@@ -3788,14 +3788,14 @@ body.is-preload .banner.onload-image-fade-in .image img {
   -ms-object-position: right;
   object-position: right;
 
-  margin-left: 50px;
+  /* margin-left: 50px;
   -webkit-transition: 0.3s ease-in-out;
-  transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out; */
 }
 
-.banner.style1.image-position-right .image:hover img {
+/* .banner.style1.image-position-right .image:hover img {
   margin-left: 0;
-}
+} */
 
 /* Banner (style2) */
 
@@ -8683,9 +8683,10 @@ body.is-preload .items.onload-fade-in > * > .inner {
   transform: translate(-50%, -50%) scale(0);
   background: #212121;
   overflow-y: scroll;
-  width: device-width;
-  height: 75%;
-  z-index: 10;
+  /* width: device-width; */
+  max-width: device-width;
+  height: 100%;
+  z-index: 1;
   text-align: center;
   padding: 20px;
   box-sizing: border-box;
@@ -8726,4 +8727,9 @@ body.is-preload .items.onload-fade-in > * > .inner {
 .headerPolicy {
   text-align: left;
   font-size: 16px;
+}
+
+.textFeatures {
+  text-align: left;
+  padding-left: 25px;
 }
