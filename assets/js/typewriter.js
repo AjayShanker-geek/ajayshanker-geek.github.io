@@ -1,14 +1,4 @@
-// var i = 0;
-// var txt = 'owadio'; /* The text */
-// var speed = 50; /* The speed/duration of the effect in milliseconds */
 
-// function typeWriter() {
-//   if (i < txt.length) {
-//     document.getElementById("demo").innerHTML += txt.charAt(i);
-//     i++;
-//     setTimeout(typeWriter, speed);
-//   }
-// }
 
 var TxtType = function(el, toRotate, period) {
     this.toRotate = toRotate;
@@ -66,3 +56,21 @@ window.onload = function() {
     css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
     document.body.appendChild(css);
 };
+
+
+// var app = document.getElementById('app');
+
+// var typewriter = new Typewriter(app, {
+//   loop: true,
+//   delay: 75,
+// });
+
+// typewriter
+//   .pauseFor(2500)
+//   .typeString('<span style="color: #FFFFFF;">A simple yet powerful native javascript</span>')
+//   .pauseFor(300)
+//   .deleteChars(10)
+//   .typeString('<strong>JS</strong> plugin for a cool typewriter effect and ')
+//   .typeString('<strong>only <span style="color: #27ae60;">5kb</span> Gzipped!</strong>')
+//   .pauseFor(1000)
+//   .start();
