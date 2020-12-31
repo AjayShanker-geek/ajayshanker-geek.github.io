@@ -8799,7 +8799,7 @@ body.is-preload .items.onload-fade-in > * > .inner {
 
 #countdown-container {
   display: inline-block; /*displays divs on a line*/
-  width: 350px; /*gives the div element a width of 300px*/
+  width: 300px; /*gives the div element a width of 300px*/
   margin: 20px 0; /*gives 20px space at the top and bottom of the div element*/
   border-radius: 16px; /*curves the edges of the div element by 5px;*/
   background: #212121; /*gives the div element a background color*/
@@ -8807,14 +8807,14 @@ body.is-preload .items.onload-fade-in > * > .inner {
 #countdown {
   font-family: "Fira Sans", sans-serif; /*changes the text font in the divelement */
   display: inline-block; /*displays divs on a line*/
-  padding: 30px; /*creates 30px space between the content of the div element and the walls of the div element*/
+  padding: 20px; /*creates 30px space between the content of the div element and the walls of the div element*/
   background: #212121;
   color: #f8a312; /*changes the text color in the div element*/
 }
 
 #countdown span {
   font-weight: bold; /*boldens text in the span element*/
-  font-size: 30px; /*changes the text size in the span element*/
+  font-size: 25px; /*changes the text size in the span element*/
 }
 
 .hover-in {
