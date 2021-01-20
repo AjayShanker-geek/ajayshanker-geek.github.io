@@ -290,6 +290,7 @@ canvas {
   position: absolute;
   width: 100%;
   height: 100%;
+  /* height: 100px; */
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 50%;
@@ -4645,7 +4646,6 @@ body.is-preload .banner.onload-image-fade-in .image img {
     transform: rotate(360deg);
   }
 }
-
 
 /* Wrapper (style1) */
 
