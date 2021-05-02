@@ -1,20 +1,38 @@
 const deadline = 'May 01 2021 23:59:59 GMT+0800';
 
+// Countdown
+// function getTimeRemaining(endtime){
+//     const total = Date.parse(endtime) - Date.parse(new Date());
+//     const seconds = Math.floor( (total/1000) % 60 );
+//     const minutes = Math.floor( (total/1000/60) % 60 );
+//     const hours = Math.floor( (total/(1000*60*60)) % 24 );
+//     const days = Math.floor( total/(1000*60*60*24) );
+
+//     return {
+//       total,
+//       days,
+//       hours,
+//       minutes,
+//       seconds
+//     };
+//   }
+
+// Countup
 function getTimeRemaining(endtime){
-    const total = Date.parse(endtime) - Date.parse(new Date());
-    const seconds = Math.floor( (total/1000) % 60 );
-    const minutes = Math.floor( (total/1000/60) % 60 );
-    const hours = Math.floor( (total/(1000*60*60)) % 24 );
-    const days = Math.floor( total/(1000*60*60*24) );
-  
-    return {
-      total,
-      days,
-      hours,
-      minutes,
-      seconds
-    };
-  }
+  const total = Date.parse(new Date()) - Date.parse(endtime);
+  const seconds = Math.floor( (total/1000) % 60 );
+  const minutes = Math.floor( (total/1000/60) % 60 );
+  const hours = Math.floor( (total/(1000*60*60)) % 24 );
+  const days = Math.floor( total/(1000*60*60*24) );
+
+  return {
+    total,
+    days,
+    hours,
+    minutes,
+    seconds
+  };
+}
 
 
 let days = getTimeRemaining(deadline).days; //starting number of days
@@ -70,6 +88,7 @@ setDays(convert(tempSeconds, 24 * 60 * 60));
 setHours(convert(tempSeconds, 60 * 60));
 setMinutes(convert(tempSeconds, 60));
 setSeconds(tempSeconds == 60 ? 59 : tempSeconds);
-totalSeconds--;
+// totalSeconds--;
+totalSeconds++;
 tempSeconds = totalSeconds;
 }, 1000);
